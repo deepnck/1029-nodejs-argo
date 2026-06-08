@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - 华晶玻璃</title>
+    <style>
+        /* 复用基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6; background: #f9f9f9; }
+        a { text-decoration: none; color: inherit; }
+        header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 24px; font-weight: bold; color: #0066cc; }
+        nav a { margin-left: 20px; font-weight: 500; }
+        nav a:hover, nav a.active { color: #0066cc; }
+
+        /* 页面标题 */
+        .page-title { text-align: center; padding: 60px 20px 20px; }
+        .page-title h1 { font-size: 36px; margin-bottom: 10px; }
+        .page-title p { color: #666; }
+
+        /* 产品网格 */
+        .product-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .product-item { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .product-img { width: 100%; height: 220px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #666; font-weight: bold; background-size: cover; background-position: center; }
+        .product-info { padding: 20px; }
+        .product-info h3 { margin-bottom: 10px; font-size: 20px; }
+        .product-info p { color: #666; font-size: 14px; margin-bottom: 15px; }
+        .btn-detail { display: inline-block; padding: 8px 20px; background: #0066cc; color: white; border-radius: 4px; font-size: 14px; }
+        .btn-detail:hover { background: #004499; }
+
+        footer { background: #222; color: #fff; text-align: center; padding: 30px 20px; margin-top: 60px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">💎 华晶玻璃</div>
+            <nav>
+                <a href="index.html">首页</a>
+                <a href="products.html" class="active">产品中心</a>
+                <a href="contact.html">联系我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-title">
+        <h1>我们的产品</h1>
+        <p>高标准工艺，满足您对工程与家装的严苛要求</p>
+    </div>
+
+    <main class="product-container">
+        <div class="product-grid">
+            <div class="product-item">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="product-info">
+                    <h3>钢化玻璃 (Tempered Glass)</h3>
+                    <p>高强度、耐热冲击。破碎后呈钝角微小颗粒，极大降低人体伤害风险，适用于幕墙、门窗。</p>
+                    <a href="contact.html" class="btn-detail">立即询价</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="product-info">
+                    <h3>中空隔音玻璃 (Insulated Glass)</h3>
+                    <p>由两片或多片玻璃组合而成，中间充入干燥气体。具有极佳的隔音、隔热、防结露性能。</p>
+                    <a href="contact.html" class="btn-detail">立即询价</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="product-info">
+                    <h3>夹层安全玻璃 (Laminated Glass)</h3>
+                    <p>玻璃间夹有PVB胶膜，即便破碎也会粘附在薄膜上，不会散落伤人。防盗、隔音效果更优。</p>
+                    <a href="contact.html" class="btn-detail">立即询价</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 华晶玻璃制品有限公司 版权所有 | 沪ICP备12345678号</p>
+    </footer>
+
+</body>
+</html>

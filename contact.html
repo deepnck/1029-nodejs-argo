@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 华晶玻璃</title>
+    <style>
+        /* 复用基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 24px; font-weight: bold; color: #0066cc; }
+        nav a { margin-left: 20px; font-weight: 500; }
+        nav a:hover, nav a.active { color: #0066cc; }
+
+        /* 联系布局 */
+        .contact-section { max-width: 1200px; margin: 60px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 50px; }
+        .contact-info { flex: 1; min-width: 300px; }
+        .contact-info h2 { font-size: 32px; margin-bottom: 20px; color: #0066cc; }
+        .contact-info p { margin-bottom: 15px; font-size: 16px; }
+        .info-item { margin-top: 30px; }
+        .info-item div { margin-bottom: 10px; }
+
+        .contact-form { flex: 1; min-width: 300px; background: #f9f9f9; padding: 30px; border-radius: 8px; border: 1px solid #eee; }
+        .contact-form h3 { margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        .form-group textarea { height: 120px; resize: vertical; }
+        .btn-submit { width: 100%; padding: 12px; background: #0066cc; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; }
+        .btn-submit:hover { background: #004499; }
+
+        footer { background: #222; color: #fff; text-align: center; padding: 30px 20px; margin-top: 60px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">💎 华晶玻璃</div>
+            <nav>
+                <a href="index.html">首页</a>
+                <a href="products.html">产品中心</a>
+                <a href="contact.html" class="active">联系我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <div class="contact-info">
+            <h2>联系我们</h2>
+            <p>如果您对我们的玻璃产品感兴趣，或者有任何定制化的工程需求，欢迎随时通过以下方式与我们取得联系。我们的销售工程师将在24小时内为您提供报价和方案。</p>
+            
+            <div class="info-item">
+                <div><strong>📍 公司地址：</strong>上海市浦东新区玻璃产业园A区88号</div>
+                <div><strong>📞 销售热线：</strong>400-123-4567</div>
+                <div><strong>📱 手机/微信：</strong>138-8888-8888 (张经理)</div>
+                <div><strong>✉️ 电子邮箱：</strong>sales@huajingglass.com</div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>在线提交意向</h3>
+            <form action="#" method="POST" onsubmit="alert('演示表单：提交成功！'); return false;">
+                <div class="form-group">
+                    <label for="name">您的姓名</label>
+                    <input type="text" id="name" required placeholder="例如：王先生">
+                </div>
+                <div class="form-group">
+                    <label for="phone">联系电话</label>
+                    <input type="tel" id="phone" required placeholder="手机或固定电话">
+                </div>
+                <div class="form-group">
+                    <label for="message">需求描述</label>
+                    <textarea id="message" required placeholder="请说明您需要的玻璃种类、尺寸、厚度或用途..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">提交需求</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 华晶玻璃制品有限公司 版权所有 | 沪ICP备12345678号</p>
+    </footer>
+
+</body>
+</html>
